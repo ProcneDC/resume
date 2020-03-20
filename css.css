@@ -346,15 +346,19 @@ img {
     font-size: 2rem;
   }
   .intro{
-    padding: 50px 20px;
+    padding: 20px 50px;
   }
   .highlight-link{
     display: inline-block;
     padding: 15px 5px;
+    font-size: 18px;
   }
   .section {
     display: block;
-    padding: 50px 20px;
+    padding: 20px 50px;
+  }
+  .section__content p {
+    font-size: 15px;
   }
   .section__title {
     padding-bottom: 20px;
@@ -366,11 +370,17 @@ img {
     flex-flow: wrap;
   }
   .skillz__category{
-    width: 43vw;
+    width: 35vw;
     margin-bottom: 15px;
   }
   .job__position{
     width: 55vw;
+  }
+  .job__time{
+    font-size: 12px;
+  }
+  .experience .jobs {
+    margin-bottom: 50px;
   }
   .featured-projects .project{
     width: 100%;
