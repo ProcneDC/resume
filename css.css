@@ -342,6 +342,9 @@ img {
 }
 
 @media (max-width:425px) {
+  .tagline, .hello {
+    font-size: 2rem;
+  }
   .intro{
     padding: 50px 20px;
   }
