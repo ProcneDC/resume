@@ -39,7 +39,7 @@ body {
 .tagline {
   max-width: 800px;
   line-height: 1.5;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
 }
 .mail {
   font-size: 1.25rem;
@@ -124,7 +124,7 @@ a:hover {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 100px 170px;
+  padding: 100px 170px 50px;
 }
 .section__title {
   -ms-flex-negative: 0;
@@ -340,21 +340,130 @@ img {
     opacity:0;
   }
 }
-
+.switch-wrapper .toggle-wrapper #switch:checked + label {
+  background: #bae67e;
+}
+.switch-wrapper .toggle-wrapper #switch:checked + label::after {
+  left: calc(100% - 3px);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+.switch-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+.switch-wrapper .sun {
+  background: url(img/switch/sun.svg) no-repeat center;
+  background-size: auto auto;
+  background-size: 100%;
+}
+.switch-wrapper .moon,
+.switch-wrapper .sun {
+  width: 17px;
+  height: 17px;
+}
+.switch-wrapper .toggle-wrapper #switch {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+  position: absolute;
+}
+.switch-wrapper .toggle-wrapper label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 45px;
+  height: 25px;
+  background: grey;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+.switch-wrapper .toggle-wrapper label::after {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 19px;
+  height: 19px;
+  background: #fff;
+  border-radius: 100%;
+}
+.switch-wrapper .moon {
+  background: url(img/switch/moon.svg) no-repeat center;
+  background-size: auto auto;
+  background-size: 100%;
+}
+.switch-wrapper .toggle-wrapper {
+  margin: 10px;
+}
+body.night,
+html.night {
+  background-color: #171c28;
+  color: #afafbf;
+}
+body.night a {
+  color: white;
+  font-weight: 600;
+}
+body.night a:hover {
+  color: #f50057;
+}
+body.night .skills .skillz__category__label {
+  color: white;
+}
+body.night .switch-wrapper .sun,
+html.night .switch-wrapper .sun {
+  background: url(img/switch/sun-white.svg) no-repeat center;
+  background-size: auto auto;
+  background-size: 100%;
+}
+body.night .switch-wrapper .moon,
+html.night .switch-wrapper .moon {
+  background: url(img/switch/moon-white.svg) no-repeat center;
+  background-size: auto auto;
+  background-size: 100%;
+}
+.section__title::after {
+    content: "";
+    display: inline-block;
+    height: 1px;
+    width: 200px;
+    background-color: rgb(45, 57, 82);
+    position: relative;
+    top: 0px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+}
 @media (max-width:425px) {
   .tagline, .hello {
     font-size: 2rem;
   }
   .intro{
-    padding: 50px 20px;
+    padding: 20px 50px;
   }
   .highlight-link{
     display: inline-block;
     padding: 15px 5px;
+    font-size: 18px;
   }
   .section {
     display: block;
-    padding: 50px 20px;
+    padding: 20px 50px;
+  }
+  .section__content p {
+    font-size: 15px;
   }
   .section__title {
     padding-bottom: 20px;
@@ -366,11 +475,17 @@ img {
     flex-flow: wrap;
   }
   .skillz__category{
-    width: 45vw;
+    width: 35vw;
     margin-bottom: 15px;
   }
   .job__position{
     width: 55vw;
+  }
+  .job__time{
+    font-size: 12px;
+  }
+  .experience .jobs {
+    margin-bottom: 50px;
   }
   .featured-projects .project{
     width: 100%;
@@ -395,5 +510,14 @@ img {
   }
   .footer__links{
     text-align: center;
+  }
+  .switch-wrapper-language {
+    left: 43vw;
+  }
+  .section__title::after {
+    display: block;
+    top: 10px;
+    margin-left: 0px;
+    margin-bottom: 20px;
   }
 }

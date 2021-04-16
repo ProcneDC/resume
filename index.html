@@ -14,10 +14,17 @@
     <title>Hello World!</title>
   </head>
   <body>
-
+    <div class="switch-wrapper">
+      <div class="sun"></div>
+      <div class="toggle-wrapper">
+        <input id="switch" type="checkbox" />
+        <label for="switch" id="toggle">Toggle</label>
+      </div>
+      <div class="moon"></div>
+    </div>
     <header class="intro">
       <h2 class="hello">Hello, world! <span class="emoji hand"></span></h2>
-      <h1 class="tagline">I'm <strong>Daniela Colombo</strong>, a graphic designer and front-end developer focused on building great projects with the best technologies available</span></h1>
+      <h1 class="tagline">I'm <strong>Daniela Colombo</strong>, a full stack developer and graphic designer focused on building great projects with the best technologies available</span></h1>
       <h3 class="mail"> Get in touch <span class="emoji link"></span> <span id="copy" class="highlight-link">danielaelinacolombo@gmail.com</span> <span class="popup" id="popup">Copied to clipboard</span> </h3>
     </header>
 
@@ -52,7 +59,7 @@
           makes me happy being able to return something and stay in touch with the university.
           </p>
           <p>
-          As a front-end developer, I enjoy bridging the gap between development and design — combining my technical knowledge with my keen eye for design to create beautiful interfaces. My goal is to always build applications that are scalable while providing engaging, pixel-perfect user experiences.
+          As a full stack developer, I enjoy bridging the gap between development and design — combining my technical knowledge with my keen eye for design to create beautiful interfaces. My goal is to always build applications that are scalable while providing engaging, pixel-perfect user experiences.
           </p>
         <p>
           When I'm not in front of a computer screen, I'm probably drawing, birdwatching or kayaking.
@@ -75,6 +82,7 @@
               <li class="skillz__category__item">HTML</li>
               <li class="skillz__category__item">CSS/Sass</li>
               <li class="skillz__category__item">SQL</li>
+              <li class="skillz__category__item">GraphQL</li>
               <li class="skillz__category__item">PHP</li>
               <li class="skillz__category__item">Python</li>
               <li class="skillz__category__item">Java</li>
@@ -83,37 +91,39 @@
           <div class="skillz__category">
             <div class="skillz__category__label">Frameworks</div>
             <ul>
-              <li class="skillz__category__item">React / React Native</li>
-              <li class="skillz__category__item">Drupal 8</li>
-              <li class="skillz__category__item">Bootstrap</li>
-              <li class="skillz__category__item">Wordpress</li>
-              <li class="skillz__category__item">Vue</li>
-              <li class="skillz__category__item">D3</li>
-              <li class="skillz__category__item">Laravel</li>
+              <li class="skillz__category__item">React &amp; React Hooks</li>
+              <li class="skillz__category__item">React Native</li>
               <li class="skillz__category__item">Django</li>
+              <li class="skillz__category__item">Material UI</li>
+              <li class="skillz__category__item">Angular</li>
+              <li class="skillz__category__item">Vue</li>
+              <li class="skillz__category__item">Laravel</li>
+              <li class="skillz__category__item">Drupal 8</li>
               <li class="skillz__category__item">Node</li>
             </ul>
           </div>
           <div class="skillz__category">
             <div class="skillz__category__label">Tools</div>
             <ul>
-              <li class="skillz__category__item">Git, Github &amp; Gitlab</li>
-              <li class="skillz__category__item">Gulp &amp; Grunt</li>
-              <li class="skillz__category__item">Chrome DevTools</li>
-              <li class="skillz__category__item">Postman</li>
+              <li class="skillz__category__item">Github &amp; Gitlab</li>
+              <li class="skillz__category__item">Git</li>
               <li class="skillz__category__item">Composer</li>
+              <li class="skillz__category__item">Grunt</li>
+              <li class="skillz__category__item">Postman</li>
+              <li class="skillz__category__item">Jira</li>
+              <li class="skillz__category__item">Leaflet</li>
+              <li class="skillz__category__item">D3</li>
               <li class="skillz__category__item">Scrum</li>
-              <li class="skillz__category__item">JIRA, RedMine &amp; Trello</li>
             </ul>
           </div>
           <div class="skillz__category">
             <div class="skillz__category__label">Design</div>
             <ul>
-              <li class="skillz__category__item">Sketch</li>
+              <li class="skillz__category__item">Illustrator</li>
               <li class="skillz__category__item">InDesign</li>
-              <li class="skillz__category__item">Photoshop &amp; Gimp</li>
-              <li class="skillz__category__item">Illustrator &amp; Inkscape</li>
+              <li class="skillz__category__item">Photoshop</li>
               <li class="skillz__category__item">After Effects</li>
+              <li class="skillz__category__item">Sketch</li>
               <li class="skillz__category__item">Wireframing</li>
               <li class="skillz__category__item">User Testing</li>
             </ul>
@@ -137,7 +147,7 @@
           </div>
           <div class="job__time">May 2019 - Present</div>
         </div>
-        <div class="job__position">Web developer / Drupal 8 &amp; React Native </div>
+        <div class="job__position">Full Stack developer. React / React Native &amp; Drupal 8 </div>
       </div>
 
       <div class="job">
@@ -156,7 +166,7 @@
           </div>
           <div class="job__time">Jan 2014 - 2018</div>
         </div>
-        <div class="job__position">Web designer</div>
+        <div class="job__position">Web developer</div>
       </div>
       <div class="job">
         <div class="time-place">
@@ -170,7 +180,7 @@
 
     </div>
     <a
-      href="archive/resume.pdf"
+      href="archive/resume-dc.pdf"
       target="_blank"
       class="arrow-link"
       >View My Resume</a
@@ -187,34 +197,16 @@
   <div class="section__content">
     <div class="project">
       <figure class="project__pic">
-        <a href="https://www.iucoop.edu.ar/" target="_blank">
-          <img src="archive/iuc.png" alt="iucoop" />
+        <a href="https://gcoop-libre.gitlab.io/unionplatform/archive/manual.pdf" target="_blank">
+          <img src="archive/up.png" alt="unionplatform" />
         </a>
       </figure>
       <figcaption class="project__caption">
         <div class="project__name">
-          <a href="https://www.iucoop.edu.ar/" target="_blank">IUCOOP</a>
+          <a href="https://gcoop-libre.gitlab.io/unionplatform/" target="_blank">Union Platform</a>
         </div>
         <p>
-          Design and development of a drupal 8 project for iucoop (university institution) + a moodle for the virtual courses.
-        </p>
-      </figcaption>
-    </div>
-    <div class="project">
-      <figure class="project__pic">
-        <a href="https://www.youtube.com/watch?v=Ru35HqoCVAY" target="_blank">
-          <img src="archive/hotel.png" alt="LeCharme" />
-        </a>
-      </figure>
-      <figcaption class="project__caption">
-        <div class="project__name">
-          <a href="https://www.youtube.com/watch?v=Ru35HqoCVAY" target="_blank"
-            >LeCharme hotel</a
-          >
-        </div>
-        <p>
-          Simple website with html5, css3 and Jquery for <a href="https://www.lecharme.com.ar/" target="_blank">
-                  LeCharme Hotel</a>.
+          A react native app to share documents, labor union enrollment through the app, georeferenced alerts and more.
         </p>
       </figcaption>
     </div>
@@ -234,6 +226,38 @@
         </p>
       </figcaption>
     </div>
+    <div class="project">
+      <figure class="project__pic">
+        <a href="https://www.iucoop.edu.ar/" target="_blank">
+          <img src="archive/iuc.png" alt="iucoop" />
+        </a>
+      </figure>
+      <figcaption class="project__caption">
+        <div class="project__name">
+          <a href="https://www.iucoop.edu.ar/" target="_blank">IUCOOP</a>
+        </div>
+        <p>
+          Design and development of a drupal 8 project for iucoop (university institution) + a moodle for the virtual
+          courses.
+        </p>
+      </figcaption>
+    </div>
+    <div class="project">
+      <figure class="project__pic">
+        <a href="https://www.youtube.com/watch?v=Ru35HqoCVAY" target="_blank">
+          <img src="archive/hotel.png" alt="LeCharme" />
+        </a>
+      </figure>
+      <figcaption class="project__caption">
+        <div class="project__name">
+          <a href="https://www.youtube.com/watch?v=Ru35HqoCVAY" target="_blank">LeCharme hotel</a>
+        </div>
+        <p>
+          Simple website with html5, css3 and Jquery for <a href="https://www.lecharme.com.ar/" target="_blank">LeCharme
+            Hotel</a>.
+        </p>
+      </figcaption>
+    </div>
   </div>
 </section>
 
@@ -247,16 +271,118 @@
     <div class="project">
       <div class="project__name">
         <a
-          href="archive/tours.pdf"
+          href="https://accountingapp.herokuapp.com/"
+          target="_blank"
+          class="arrow-link"
+          >Django Accounting app</a
+        >
+      </div>
+      <p>
+      This project was developed for the Magoya Challenge. It consists in a webapp for personal accounting management. You can load your transactions, with their type and description, and it will show your account balance and a chart of it's evolution in time. It is deployed in
+      <a
+        href="https://www.heroku.com"
+        target="_blank"
+        class="arrow-link"
+        >Heroku</a
+      >
+      free hosting site.
+      <a
+        href="https://gitlab.com/mauro_oruam/acountapp"
+        target="_blank"
+        class="arrow-link"
+        >Gitlab repository</a
+      >
+      </p>
+      <div class="project__used">
+        <span class="project__used__item">Django</span>
+        <span class="project__used__item">Heroku</span>
+        <span class="project__used__item">Bootstrap</span>
+      </div>
+    </div>
+    <div class="project">
+      <div class="project__name">
+        <a
+          href="https://danielacolombo.gitlab.io/leaflet-firstproject/"
+          target="_blank"
+          class="arrow-link"
+          >Interactive map</a
+        >
+      </div>
+      <p>
+      First project with Leaflet library for create a site with an interactive map.
+      </p>
+      <div class="project__used">
+        <span class="project__used__item">Leaflet</span>
+        <span class="project__used__item">Javascript</span>
+        <span class="project__used__item">Bootstrap</span>
+      </div>
+    </div>
+    <div class="project">
+      <div class="project__name">
+        <a
+          href="#"
+          target="_blank"
+          class="arrow-link"
+          >Django ecommerce</a
+        >
+      </div>
+      <p>
+      E-commerce project for buying and selling between users. It is deployed in
+      <a
+        href="https://www.heroku.com"
+        target="_blank"
+        class="arrow-link"
+        >Heroku</a
+      >
+      free hosting site.
+      <a
+        href="#"
+        target="_blank"
+        class="arrow-link"
+        >Gitlab repository</a
+      >
+      </p>
+      <div class="project__used">
+        <span class="project__used__item">Django</span>
+        <span class="project__used__item">Heroku</span>
+        <span class="project__used__item">Bootstrap</span>
+      </div>
+    </div>
+    <div class="project">
+      <div class="project__name">
+        <a
+          href="https://gitlab.com/danielacolombo/chartsdisplay"
+          target="_blank"
+          class="arrow-link"
+          >Bar charts</a
+        >
+      </div>
+      <p>
+        Bar charts
+        <a
+          href="https://gitlab.com/danielacolombo/chartsdisplay"
+          target="_blank"
+          class="arrow-link"
+          >Gitlab repository</a
+        >
+      </p>
+      <div class="project__used">
+        <span class="project__used__item">Angular</span>
+        <span class="project__used__item">D3</span>
+        <span class="project__used__item">TypeScript</span>
+      </div>
+    </div>
+    <div class="project">
+      <div class="project__name">
+        <a
+          href="https://danielacolombo.gitlab.io/presentation-tourapp/"
           target="_blank"
           class="arrow-link"
           >Argentina birds App</a
         >
       </div>
       <p>
-        E-commerce oriented, booking and tour management application for Android.
-          It's also an open source project, developed with React Native.
-          A quiz game for learning to identify the bird species of Argentina by their photos.
+      E-commerce oriented, tour booking management application for Android. It's an open source project, developed with React Native.
       </p>
       <div class="project__used">
         <span class="project__used__item">JavaScript</span>
@@ -319,7 +445,7 @@
     <div class="project">
       <div class="project__name">
         <a
-          href="http://www.appsindical.org.ar/"
+          href="https://gcoop-libre.gitlab.io/sindicapp-web/"
           target="_blank"
           class="arrow-link"
           >App sindical</a
@@ -333,6 +459,7 @@
         <span class="project__used__item">React Native</span>
         <span class="project__used__item">JavaScript</span>
         <span class="project__used__item">Saga</span>
+        <span class="project__used__item">Axios</span>
       </div>
     </div>
     <div class="project">
@@ -386,6 +513,9 @@
     <a href="mailto:danielaelinacolombo@gmail.com" target="_blank" title="email">
       <span class="text">email</span>
     </a>
+    <a href="https://gitlab.com/danicolombo" target="_blank" title="gitlab">
+      <span class="text">gitlab</span>
+    </a>
     <a href="https://github.com/ProcneDC" target="_blank" title="github">
       <span class="text">github</span>
     </a>
@@ -400,12 +530,10 @@
 </footer>
 <button id="top-button" onclick="topFunction()"> <img src="archive/pointing-up.png" alt=""> </button>
 
-
-<script src="main.js"></script>
-
-
-
-
-
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"
+      charset="utf-8"></script>
+    <script src="main.js"></script>
+    <script src="night.js"></script>
   </body>
 </html>
